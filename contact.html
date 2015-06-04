@@ -7,8 +7,9 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-		
-	<title>Caffeine Lover</title>
+	
+	
+	<title>HalfTone Template</title>
 	<meta name="description" content="">
 	
 	<!-- Mobile viewport optimized: h5bp.com/viewport -->
@@ -20,14 +21,24 @@
 	<link rel="stylesheet" href="css/tweet.css" media="all"  />
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" media="all" href="css/lessframework.css"/>
-	<link href="css/lightbox.css" rel="stylesheet" />
+	<link rel="stylesheet" media="screen" href="css/sequencejs-theme.modern-slide-in.css" />
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ruluko|Sirin+Stencil">
+		
 	
 	
 	
 	<!-- All JavaScript at the bottom, except this Modernizr build.
 	   Modernizr enables HTML5 elements & feature detects for optimal performance.
 	   Create your own custom Modernizr build: www.modernizr.com/download/ -->
-	<script src="js/modernizr-2.5.3.min.js"></script>
+	<script src="js/modernizr-2.5.3.min.js"></script>	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>
+		 if (typeof jQuery == 'undefined'){
+		    document.write(unescape('%3Cscript src="scripts/jquery-min.js" %3E%3C/script%3E'));
+		 }
+		</script>
+		<script src="scripts/jquery.sequence-min.js"></script>
+		<script src="sequencejs-options.modern-slide-in.js"></script>
 </head>
 <body>
 	
@@ -41,6 +52,7 @@
 					
 					<li class="dribbble"><a href="http://www.dribbble.com/ansimuz"  title="Dribbble" ></a></li>
 					<li class="facebook"><a href="http://www.facebook.com/pages/Ansimuz/224538697564461"  title="Facebook" ></a></li>
+					<li class="forrst"><a href="http://forrst.me/ansimuz"  title="forrst" ></a></li>
 					<li class="googleplus"><a href="https://plus.google.com/109030791898417339180/posts"  title="googleplus" ></a></li>
 					<li class="twitter"><a href="https://twitter.com/ansimuz"  title="twitter" ></a></li>
 				</ul>
@@ -55,7 +67,7 @@
 			<!-- nav -->
 			<nav class="cf">
 				<ul id="nav" class="sf-menu">
-					<li class="current-menu-item"><a href="index.html"><span>HOME</span></a></li>
+					<li><a href="index.html"><span>HOME</span></a></li>
 					<li><a href="page.html"><span>FEATURES</span></a>
 						<ul>
 							<li><a href="page.html">Columns</a></li>
@@ -64,86 +76,98 @@
 							<li><a href="page-sidebar.html">Sidebar Page</a></li>
 						</ul>
 					</li>
-					<li><a href="http://milenasudomir.tumblr.com/"><span>BLOG</span></a></li>
+					<li><a href="blog.html"><span>BLOG</span></a></li>
 					<li><a href="portfolio.html"><span>WORK</span></a></li>
-					<li><a href="contact.html"><span>CONTACT</span></a></li>
-					
+					<li class="current-menu-item"><a href="contact.html"><span>CONTACT</span></a></li>
+					<li><a href="http://themeforest.net/item/halftone-wordpress-theme/2661175?ref=Ansimuz"><span>WORDPRESS VERSION</span></a></li>
 				</ul>
 				<div id="combo-holder"></div>
 			</nav>
 			<!-- ends nav -->
 			
 		</header>
-		
-		
 		<!-- MAIN -->
 		<div role="main" id="main" class="cf">
-			<!-- SLIDER -->
-			<div class="slider-wrapper theme-halftone">
-	            <div id="slider" class="nivoSlider">
-	                <img src="img/dummies/slides/01.jpg" alt=""  />
-	                <img src="img/dummies/slides/02.jpg" alt="" />
-	                <img src="img/dummies/slides/03.jpg" alt="" />
-	            </div>
-	            <div class="slider-left"></div>
-	            <div class="slider-right"></div>
-	        </div>
-			<!-- ENDS SLIDER -->
 			
-			
-			<!-- headline -->
-			<div class="headline">SHOULD BE STUFF</div>
-			<!-- ENDS headline -->
-			
-  			
-			<!-- featured -->
-					
-			<ul class="feature cf">
-				<li>
-					<a href="img/dummies/t1.jpg" class="thumb" data-lightbox="example-set">
-						
-					<img class="example-image"alt="Thumbnail"  src="img/dummies/t1.jpg" alt=""/>
-						<div class="img-overlay"><i class="icon-plus-sign"></i></div>
-						<div class="date"><span class="m">NEW</span></div>
-					</a>
-					<a href="single.html"  class="excerpt">Pellentesque habitant morbi tristique senectus</a>
-			</li>
+			<!-- page-content -->
+			<div class="page-content">
+				
+				<!-- entry-content -->	
+	        	<div class="sequence-theme">
+			<div id="sequence">
+
+				<img class="sequence-prev" src="images/bt-prev.png" alt="Previous Frame" />
+				<img class="sequence-next" src="images/bt-next.png" alt="Next Frame" />
+
+				<ul class="sequence-canvas">
+					<li class="animate-in">
+					<img class="model" src="images/model1.png" alt="Model 1" />
+					</li>
+					<li>
+						<img class="model" src="images/model2.png" alt="Model 2" />
+					</li>
+					<li>
+						<img class="model" src="images/model3.png" alt="Model 3" />
+					</li>
 				</ul>
-			
-<!-- featured -->
-			<ul class="feature cf">
-				<li>
-					<a href="single.html" class="thumb" >
-						<img src="img/dummies/t1.jpg" alt="Thumbnail" />
-						<div class="img-overlay"><i class="icon-plus-sign"></i></div>
-						<div class="date"><span class="m">JAN</span><span class="d">09</span></div>
-					</a>
-					<a href="single.html"  class="excerpt">Pellentesque habitant morbi tristique senectus</a>
-					<div class="categories"><a href="#" >webdesign, </a><a href="#" >print, </a><a href="#" >photo, </a></div>
-				</li>
+
+				<ul class="sequence-pagination">
+					<li><img src="images/tn-model1.png" alt="Model 1" /></li>
+					<li><img src="images/tn-model2.png" alt="Model 2" /></li>
+					<li><img src="images/tn-model3.png" alt="Model 3" /></li>
+				</ul>
+				</div>
+		</div>
+					<!-- ENDS GOOGLE MAPS -->
+					
+					
+					 <div class="block-divider"></div>
+					 
+					<h2 class="heading">Contact Form</h2>
+				<!-- form -->
+				<form id="contactForm" action="#" method="post">
+					<fieldset>
+														
+						<p>
+							<label for="name" >Name</label>
+							<input name="name"  id="name" type="text" class="form-poshytip" title="Enter your full name" />
+						</p>
+						
+						<p>
+							<label for="email" >Email</label>
+							<input name="email"  id="email" type="text" class="form-poshytip" title="Enter your email address" />
+						</p>
+						
+						<p>
+							<label for="web">Website</label>
+							<input name="web"  id="web" type="text" class="form-poshytip" title="Enter your website" />
+						</p>
+						
+						<p>
+							<label for="comments">Message</label>
+							<textarea  name="comments"  id="comments" rows="5" cols="20" class="form-poshytip" title="Enter your comments"></textarea>
+						</p>
+						
+						<!-- send mail configuration -->
+						<input type="hidden" value="your@email.com" name="to" id="to" />
+						<input type="hidden" value="ENter the subject here" name="subject" id="subject" />
+						<input type="hidden" value="send-mail.php" name="sendMailUrl" id="sendMailUrl" />
+						<!-- ENDS send mail configuration -->
+						
+						<p><input type="button" value="Send" name="submit" id="submit" /> <span id="error" class="warning">Message</span></p>
+					</fieldset>
+					
+				</form>
+				<p id="sent-form-msg" class="success">Form data sent. Thanks for your comments.</p>
+				<!-- ENDS form -->
 				
-				<li>
-					<a href="single.html" class="thumb" >
-						<img src="img/dummies/t2.jpg" alt="Thumbnail" />
-						<div class="img-overlay"><i class="icon-plus-sign"></i></div>
-						<div class="date"><span class="m">JAN</span><span class="d">09</span></div>
-					</a>
-					<a href="single.html"  class="excerpt">Pellentesque habitant morbi tristique senectus</a>
-					<div class="categories"><a href="#" >webdesign, </a><a href="#" >print, </a><a href="#" >photo, </a></div>
-				</li>
 				
-				<li>
-					<a href="single.html" class="thumb" >
-						<img src="img/dummies/t3.jpg" alt="Thumbnail" />
-						<div class="img-overlay"><i class="icon-plus-sign"></i></div>
-						<div class="date"><span class="m">JAN</span><span class="d">09</span></div>
-					</a>
-					<a href="single.html"  class="excerpt">Pellentesque habitant morbi tristique senectus</a>
-					<div class="categories"><a href="#" >webdesign, </a><a href="#" >print, </a><a href="#" >photo, </a></div>
-				</li>
-			</ul>
-			<!-- ENDS featured -->
-			
+										
+				</div>
+				<!-- ENDS entry-content -->
+
+			</div><!-- ENDS page-content -->
+						
 		</div>
 		<!-- ENDS MAIN -->
 		
@@ -247,8 +271,6 @@
 	
 	<!-- scripts concatenated and minified via build script -->
 	<script src="js/custom.js"></script>
-	<script src="js/jquery-1.11.0.min.js"></script>
-	<script src="js/lightbox.min.js"></script>
 	
 	<!-- superfish -->
 	<script  src="js/superfish-1.4.8/js/hoverIntent.js"></script>
@@ -262,7 +284,10 @@
 	<script src="js/css3-mediaqueries.js"></script>
 	<script src="js/tabs.js"></script>
 	<script  src="js/poshytip-1.1/src/jquery.poshytip.min.js"></script>
+	<script type="text/javascript" src="js/form-validation.js"></script>
 	<!-- end scripts -->
+	
+	
 
 </body>
 </html>
